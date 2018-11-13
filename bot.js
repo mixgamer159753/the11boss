@@ -213,7 +213,7 @@ const secreT = [
 
 
 client.on("message", message => {
- if (message.content === "#help 2") {
+ if (message.content === "#help1") {
         message.react("😘")
            message.react("😵")
   const embed = new Discord.RichEmbed() 
@@ -340,7 +340,7 @@ message.author.sendEmbed(embed)
 
 
 client.on("message", message => {
- if (message.content === "help 1") {
+ if (message.content === "help2") {
         message.react("😮")
                 message.react("🤒")
   const embed = new Discord.RichEmbed() 
@@ -779,7 +779,7 @@ client.on('ready', () => {
 }); 
 
 client.on("message", message => {
-    var prefix = "^^";
+    var prefix = "#";
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
  if (!args[1]) {
@@ -811,7 +811,7 @@ client.on("message", message => {
 
 client.on('message', message => {
   if (true) {
-if (message.content === '^^support') {
+if (message.content === '#support') {
       message.author.send(' |https://discord.gg/T4Q7vXP| لـ أي استفسار').catch(e => console.log(e.stack));
 
     }
@@ -1181,4 +1181,4 @@ client.on('message', message => {
 });
 
 
-client.login('NTExOTc0NzA5ODYxMjg1ODkz.DsytSQ.UtjTk9Pt5jdQdSKrS_iOuxhaSzI');
+client.login('NTExOTc0NzA5ODYxMjg1ODkz.DsywtA.ctF5XRoAxLXnwZ9p1pBpCooBjX4');
