@@ -33,9 +33,9 @@ client.on("message", message => {
       
       .addField("『#help』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)
       
-	    .addField("『#help 1』👻『اذا تبي الاوامر العامة』😳", true)
+	    .addField("『#help1』👻『اذا تبي الاوامر العامة』😳", true)
 	    
-      .addField("『#help 2』😮『اذا تبي  الاوامر الادارية』🤒", true)
+      .addField("『#help2』😮『اذا تبي  الاوامر الادارية』🤒", true)
       
       .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الاوامر 』『😉』", true)
       
@@ -340,7 +340,7 @@ message.author.sendEmbed(embed)
 
 
 client.on("message", message => {
- if (message.content === "help2") {
+ if (message.content === "#help2") {
         message.react("😮")
                 message.react("🤒")
   const embed = new Discord.RichEmbed() 
@@ -597,7 +597,7 @@ client.on('message', (message) => {
   
   
 client.on('message', message => {
-     if (message.content === "^^servers") {
+     if (message.content === "#servers") {
      let embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .addField("**| السيرفرات |**" , client.guilds.size)
